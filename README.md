@@ -9,3 +9,5 @@ Select column B > press ctrl+H > Find and Replace box pops up > Find what >> S >
 =IF(L2<31, "Adoloscent", "Invalid")
 -- Using nested IF function to a "middle age" group
 =IF(L3>=31, "Middle age", IF(L3>31, "Invalid","Adoloscent"))
+-- Adding a new age range with double nested IF function
+=IF(L4>55,"Old",  IF(L4>=31,"Middle Age",IF(L4<31,"Adoloscent","Invalid")))
